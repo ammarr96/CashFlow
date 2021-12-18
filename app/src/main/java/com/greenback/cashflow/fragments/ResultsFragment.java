@@ -73,7 +73,7 @@ public class ResultsFragment extends Fragment {
 
         //transferDuration.add("Odaberite vrijeme isplate");
         transferDuration.add("Isplata sljedeći dan");
-        transferDuration.add("Isplata sti dan");
+        transferDuration.add("Isplata isti dan");
         transferDuration.add("Isplata za manje od 1h");
 
         CustomSpinnerAdapter transferTypeAdapter = new CustomSpinnerAdapter(getContext(), transferTypes);
