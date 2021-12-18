@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color"
+    android:animateLayoutChanges="true"
+    tools:context=".fragments.ResultsFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="@dimen/cardview_corner_radius"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/amountET"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/enter_amount"
+                android:inputType="number"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/primary_color"
+                android:fontFamily="@font/robotobold"
+                android:textStyle="bold"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp"
+                android:transitionName="amount_et" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:gravity="center"
+                android:text="EUR"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonCalculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/amountET"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_background"
+                android:text="@string/calculate"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:transitionName="shared_button"></androidx.appcompat.widget.AppCompatButton>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/spinners"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:text="Odaberite način isplate"
+            android:layout_marginBottom="5dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_button_background"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="10dp"
+            android:text="Odaberite vrijeme isplate"
+            android:layout_marginBottom="5dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_button_background"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resultsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="10"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        tools:listitem="@layout/fee_info_recyclerview_item"
+        android:layout_below="@id/spinners">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

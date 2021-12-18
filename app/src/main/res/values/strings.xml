@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CashFlow</string>
+    <string name="calculator_bottom_nav_title">Kalkulator</string>
+    <string name="news_bottom_nav_title">Novosti</string>
+    <string name="faq_bottom_nav_title">Česta pitanja</string>
+    <string name="settings_bottom_nav_title">Postavke</string>
+
+    <string name="calculator_intro_text1">Šaljete novac iz Njemačke u Bosnu i Hercegovinu?</string>
+    <string name="calculator_intro_text2">Saznajte troškove Vaše transakcije</string>
+    <string name="enter_amount">Unesite iznos koji šaljete</string>
+    <string name="calculate">Izračunaj troškove</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

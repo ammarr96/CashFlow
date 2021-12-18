@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:background="@drawable/rounded_view"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:text="Šta su troškovi transakcije?">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/text_color"
+        android:text="Tri glavna tipa provizija su inicijalna provizija na transfer, koji najčešće predstavlja neki fiksni iznos, zatim procentualna provizija na transfer, koja se skalira u odnosu na iznos same doznake, i finalno provizija na konverziju, koja se naplaćuje prilikom prebacivanja doznake iz jedne valute u drugu. Pojedine banke se odlučuju da ne naplaćuju pojedine vrste provizija.">
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:paddingStart="25dp"
+        android:paddingBottom="25dp"
+        app:srcCompat="@drawable/ic_close" />
+
+</RelativeLayout>

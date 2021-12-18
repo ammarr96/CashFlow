@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.NewsFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            app:contentInsetEnd="0dp"
+            android:background="@color/navigation_bar_color">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/backIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:padding="15dp"
+                    android:visibility="gone"
+                    android:adjustViewBounds="true"
+                    android:tint="@color/navigation_bar_text_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/news_bottom_nav_title"
+                    android:textColor="@color/navigation_bar_text_color"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/editIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:padding="15dp"
+                    android:visibility="gone"
+                    android:tint="@color/navigation_bar_text_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/separator_line_color"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBarLayout">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <androidx.appcompat.widget.AppCompatImageView
+              android:id="@+id/adImage"
+              android:layout_width="match_parent"
+              android:layout_height="220dp"
+              android:scaleType="centerCrop">
+          </androidx.appcompat.widget.AppCompatImageView>
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/newsRecyclerView"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+              tools:itemCount="10"
+              tools:listitem="@layout/news_recyclerview_item">
+          </androidx.recyclerview.widget.RecyclerView>
+
+      </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <View
+        android:id="@+id/backView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#99000000">
+    </View>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/bottom_sheet"
+            app:layout_behavior="@string/bottom_sheet_behavior"
+            layout="@layout/survey_layout" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</RelativeLayout>

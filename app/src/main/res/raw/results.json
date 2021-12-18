@@ -1,0 +1,155 @@
+[{
+  "bank_name": "UniCredit Bank",
+  "bank_image_url": "https://logoeps.com/wp-content/uploads/2013/01/unicredit-bank-vector-logo.png",
+  "type": "bank",
+  "transaction_fees": [{
+    "type": "same_day",
+    "initial_fee": "5",
+    "transaction_fee_percentage": "1.5",
+    "conversion_fee_percentage": "1.9",
+    "exchange_rate": 1.95583
+  },
+    {
+      "type": "next_day",
+      "initial_fee": "3",
+      "transaction_fee_percentage": "0.7",
+      "conversion_fee_percentage": "1.2",
+      "exchange_rate": 1.95583
+    }
+  ]
+},
+  {
+    "bank_name": "Sberbank",
+    "bank_image_url": "https://www.sberbank.ba/img/logo.png",
+    "type": "bank",
+    "transaction_fees": [{
+      "type": "same_day",
+      "initial_fee": "7",
+      "transaction_fee_percentage": "1.6",
+      "conversion_fee_percentage": "2",
+      "exchange_rate": 1.95583
+    },
+      {
+        "type": "next_day",
+        "initial_fee": "4",
+        "transaction_fee_percentage": "1.3",
+        "conversion_fee_percentage": "1.7",
+        "exchange_rate": 1.95583
+      }
+    ]
+  },
+  {
+    "bank_name": "ASA Banka",
+    "bank_image_url": "https://www.asabanka.ba/wp-content/uploads/2017/04/Logo_slogan-01_resized-169x40.png",
+    "type": "bank",
+    "transaction_fees": [{
+      "type": "same_day",
+      "initial_fee": "7",
+      "transaction_fee_percentage": "1.7",
+      "conversion_fee_percentage": "2",
+      "exchange_rate": 1.93583
+    },
+      {
+        "type": "next_day",
+        "initial_fee": "5",
+        "transaction_fee_percentage": "1",
+        "conversion_fee_percentage": "1.7",
+        "exchange_rate": 1.95583
+      }
+    ]
+  },
+  {
+    "bank_name": "Intesa Sanpaolo Bank",
+    "bank_image_url": "https://pngimage.net/wp-content/uploads/2018/06/intesa-sanpaolo-png-9.png",
+    "type": "bank",
+    "transaction_fees": [{
+      "type": "same_day",
+      "initial_fee": "9",
+      "transaction_fee_percentage": "1.6",
+      "conversion_fee_percentage": "1.8",
+      "exchange_rate": 1.93583
+    },
+      {
+        "type": "next_day",
+        "initial_fee": "4",
+        "transaction_fee_percentage": "1.5",
+        "conversion_fee_percentage": "1.8",
+        "exchange_rate": 1.93583
+      }
+    ]
+  },
+  {
+    "bank_name": "Raiffeisen Bank",
+    "bank_image_url": "https://kliker.ba/uploads/Pics%20misc/Raiffeisen_Bank.svg.png",
+    "type": "bank",
+    "transaction_fees": [{
+      "type": "same_day",
+      "initial_fee": "5",
+      "transaction_fee_percentage": "1.8",
+      "conversion_fee_percentage": "1.9",
+      "exchange_rate": 1.93583
+    },
+      {
+        "type": "next_day",
+        "initial_fee": "3",
+        "transaction_fee_percentage": "1.2",
+        "conversion_fee_percentage": "1.9",
+        "exchange_rate": 1.93583
+      }
+    ]
+  },
+  {
+    "bank_name": "Western Union",
+    "bank_image_url": "https://www.actualidadecommerce.com/wp-content/uploads/2017/03/Western-uni%C3%B3n-1024x451.jpg",
+    "type": "cash",
+    "transaction_fees": [{
+      "type": "one_hour",
+      "initial_fee": "8",
+      "transaction_fee_percentage": "2.5",
+      "conversion_fee_percentage": "2.9",
+      "exchange_rate": 1.93583
+    },
+      {
+        "type": "same_day",
+        "initial_fee": "6",
+        "transaction_fee_percentage": "2.2",
+        "conversion_fee_percentage": "2.9",
+        "exchange_rate": 1.93583
+      },
+      {
+        "type": "next_day",
+        "initial_fee": "2",
+        "transaction_fee_percentage": "1.3",
+        "conversion_fee_percentage": "1.7",
+        "exchange_rate": 1.93583
+      }
+    ]
+  },
+  {
+    "bank_name": "MoneyGram",
+    "bank_image_url": "https://cdn.freelogovectors.net/wp-content/uploads/2020/02/moneygram-logo-768x768.png",
+    "type": "cash",
+    "transaction_fees": [{
+      "type": "one_hour",
+      "initial_fee": "8",
+      "transaction_fee_percentage": "2.3",
+      "conversion_fee_percentage": "2.8",
+      "exchange_rate": 1.93583
+    },
+      {
+        "type": "same_day",
+        "initial_fee": "5",
+        "transaction_fee_percentage": "2",
+        "conversion_fee_percentage": "2.5",
+        "exchange_rate": 1.93583
+      },
+      {
+        "type": "next_day",
+        "initial_fee": "3",
+        "transaction_fee_percentage": "1.5",
+        "conversion_fee_percentage": "1.6",
+        "exchange_rate": 1.93583
+      }
+    ]
+  }
+]

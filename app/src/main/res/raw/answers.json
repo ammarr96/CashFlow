@@ -1,0 +1,30 @@
+[
+  {
+    "question": "Mogu li slati novac preko CashFlow aplikacije?",
+    "answer": "Ne, CashFlow nudi najažurnije informacije o najboljem načinu slanja novca iz inostranstva, ali aplikacija ne omogućava transfer novca."
+  },
+  {
+    "question": "Kako mogu koristiti kalkulator?",
+    "answer": "Kada ste u kalkulatoru provizija, unesite željeni iznos novca i pritisnite dugme za računanje provizije. Dobit ćete listu finansijskih institucija koje omogućavaju transfer novca, kao i proviziju koju će ove institucije naplatiti."
+  },
+  {
+    "question": "Mogu li vidjeti više detalja o proviziji koje banke naplaćuju?",
+    "answer": "Da, pritiskanje neke banke sa liste mogućih transfera će vam dati više informacija o tome kako je provizija izračunata, kao i iznos u lokalnoj valuti koju će primalac dobiti."
+  },
+  {
+    "question": "Koje sve vrste provizija postoje?",
+    "answer": "Tri glavna tipa provizija su inicijalna provizija na transfer, koji najčešće predstavlja neki fiksni iznos, zatim procentualna provizija na transfer, koja se skalira u odnosu na iznos same doznake, i finalno provizija na konverziju, koja se naplaćuje prilikom prebacivanja doznake iz jedne valute u drugu. Pojedine banke se odlučuju da ne naplaćuju pojedine vrste provizija."
+  },
+  {
+    "question": "Šta ako primalac ne posjeduje bankovni račun?",
+    "answer": "Transfer novca je i u tom slučaju i dalje moguć, jer pojedine finansijske institucije podržavaju isplatu na licu mjesta ili transfere na digitalne račune."
+  },
+  {
+    "question": "Kako mogu vidjeti vijesti o životnom standardu u BiH?",
+    "answer": "Na donjem dijelu ekrana, možete kliknuti na ikonu vijesti. Lista članaka će Vam biti prikazana, i više informacija možete dobiti odabirom pojedinog članka."
+  },
+  {
+    "question": "Ne mogu naći odgovor na vlastito pitanje, kako vas mogu kontaktirati?",
+    "answer": "Na donjem dijelu ekrana, kliknite na konfiguracijski panel. Kada se prikažu konfiguracijske opcije, kliknite na slanje pitanja i napišite nam poruku."
+  }
+]
